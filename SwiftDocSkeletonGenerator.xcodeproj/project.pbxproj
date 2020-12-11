@@ -64,6 +64,8 @@
 		A7FB1F1A2583DCF40045B458 /* StructDocumentationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StructDocumentationTests.swift; sourceTree = "<group>"; };
 		A7FB1F1C2583DD6D0045B458 /* EnumDocumentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnumDocumentation.swift; sourceTree = "<group>"; };
 		A7FB1F1E2583DD990045B458 /* EnumDocumentationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnumDocumentationTests.swift; sourceTree = "<group>"; };
+		A7FB1F202583E0E00045B458 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		A7FB1F212583E1900045B458 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +123,7 @@
 			isa = PBXGroup;
 			children = (
 				A71F8E842583BE9A00F4C2E6 /* main.swift */,
+				A7FB1F202583E0E00045B458 /* README.md */,
 			);
 			path = SwiftDocSkeletonGenerator;
 			sourceTree = "<group>";
@@ -128,10 +131,11 @@
 		A71F8E952583C17F00F4C2E6 /* SwiftDocSkeletonGeneratorLib */ = {
 			isa = PBXGroup;
 			children = (
-				A71F8E9E2583C19900F4C2E6 /* ClassDocumentation.swift */,
 				A7FB1F162583DAE00045B458 /* BaseDocumentation.swift */,
-				A7FB1F182583DCC40045B458 /* StructDocumentation.swift */,
+				A71F8E9E2583C19900F4C2E6 /* ClassDocumentation.swift */,
 				A7FB1F1C2583DD6D0045B458 /* EnumDocumentation.swift */,
+				A7FB1F182583DCC40045B458 /* StructDocumentation.swift */,
+				A7FB1F212583E1900045B458 /* README.md */,
 			);
 			path = SwiftDocSkeletonGeneratorLib;
 			sourceTree = "<group>";
@@ -147,9 +151,9 @@
 			isa = PBXGroup;
 			children = (
 				A71F8EB72583C40200F4C2E6 /* ClassDocumentationTests.swift */,
-				A7FB1F1A2583DCF40045B458 /* StructDocumentationTests.swift */,
-				A71F8EB02583C2F400F4C2E6 /* Info.plist */,
 				A7FB1F1E2583DD990045B458 /* EnumDocumentationTests.swift */,
+				A71F8EB02583C2F400F4C2E6 /* Info.plist */,
+				A7FB1F1A2583DCF40045B458 /* StructDocumentationTests.swift */,
 			);
 			path = SwiftDocSkeletonGeneratorTests;
 			sourceTree = "<group>";
