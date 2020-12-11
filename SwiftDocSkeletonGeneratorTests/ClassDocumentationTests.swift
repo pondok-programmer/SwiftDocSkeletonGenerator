@@ -25,7 +25,7 @@ class ClassDocumentationTests: XCTestCase {
         XCTAssertNoThrow(try ClassDocumentation(source))
     }
 
-    func testDocumentationGenerator() {
+    func testTopLevelClass() {
         let source = """
         class Foo {}
         """
@@ -35,8 +35,53 @@ class ClassDocumentationTests: XCTestCase {
         
         let expectedResult = """
         /**
-        */
-        \(source)
+         # Foo Overview
+         
+         # Responsibility
+         
+         # Consideration
+         
+         */
+        class Foo {}
+        """
+        
+        XCTAssertEqual(actualResult, expectedResult)
+    }
+    
+    func testNestedClass() {
+        let source = """
+        class Foo {
+            
+            class Bar {}
+            
+        }
+        """
+        
+        let docGen = try! ClassDocumentation(source)
+        let actualResult = docGen.rewrite()
+        
+        let expectedResult = """
+        /**
+         # Foo Overview
+         
+         # Responsibility
+         
+         # Consideration
+         
+         */
+        class Foo {
+            
+            /**
+             # Bar Overview
+             
+             # Responsibility
+             
+             # Consideration
+             
+             */
+            class Bar {}
+            
+        }
         """
         
         XCTAssertEqual(actualResult, expectedResult)
