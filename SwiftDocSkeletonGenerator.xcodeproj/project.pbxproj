@@ -8,9 +8,31 @@
 
 /* Begin PBXBuildFile section */
 		A71F8E852583BE9A00F4C2E6 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71F8E842583BE9A00F4C2E6 /* main.swift */; };
-		A71F8E8D2583BFCC00F4C2E6 /* SwiftSyntax in Frameworks */ = {isa = PBXBuildFile; productRef = A71F8E8C2583BFCC00F4C2E6 /* SwiftSyntax */; };
-		A71F8E8F2583BFCC00F4C2E6 /* SwiftSyntaxBuilder in Frameworks */ = {isa = PBXBuildFile; productRef = A71F8E8E2583BFCC00F4C2E6 /* SwiftSyntaxBuilder */; };
+		A71F8E9F2583C19900F4C2E6 /* ClassDocumentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71F8E9E2583C19900F4C2E6 /* ClassDocumentation.swift */; };
+		A71F8EA12583C1AF00F4C2E6 /* libSwiftDocSkeletonGeneratorLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A71F8E942583C17F00F4C2E6 /* libSwiftDocSkeletonGeneratorLib.a */; };
+		A71F8EAF2583C2F400F4C2E6 /* SwiftDocSkeletonGeneratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71F8EAE2583C2F400F4C2E6 /* SwiftDocSkeletonGeneratorTests.swift */; };
+		A71F8EB12583C2F400F4C2E6 /* libSwiftDocSkeletonGeneratorLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A71F8E942583C17F00F4C2E6 /* libSwiftDocSkeletonGeneratorLib.a */; };
+		A71F8EB82583C40200F4C2E6 /* ClassDocumentationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71F8EB72583C40200F4C2E6 /* ClassDocumentationTests.swift */; };
+		A7FB1F122583C8780045B458 /* SwiftSyntax in Frameworks */ = {isa = PBXBuildFile; productRef = A7FB1F112583C8780045B458 /* SwiftSyntax */; };
+		A7FB1F142583C8780045B458 /* SwiftSyntaxBuilder in Frameworks */ = {isa = PBXBuildFile; productRef = A7FB1F132583C8780045B458 /* SwiftSyntaxBuilder */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A71F8EA22583C1AF00F4C2E6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A71F8E792583BE9A00F4C2E6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A71F8E932583C17F00F4C2E6;
+			remoteInfo = Lib;
+		};
+		A71F8EB22583C2F400F4C2E6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A71F8E792583BE9A00F4C2E6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A71F8E932583C17F00F4C2E6;
+			remoteInfo = SwiftDocSkeletonGeneratorLib;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		A71F8E7F2583BE9A00F4C2E6 /* CopyFiles */ = {
@@ -27,6 +49,13 @@
 /* Begin PBXFileReference section */
 		A71F8E812583BE9A00F4C2E6 /* SwiftDocSkeletonGenerator */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SwiftDocSkeletonGenerator; sourceTree = BUILT_PRODUCTS_DIR; };
 		A71F8E842583BE9A00F4C2E6 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		A71F8E942583C17F00F4C2E6 /* libSwiftDocSkeletonGeneratorLib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSwiftDocSkeletonGeneratorLib.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		A71F8E9E2583C19900F4C2E6 /* ClassDocumentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassDocumentation.swift; sourceTree = "<group>"; };
+		A71F8EAC2583C2F300F4C2E6 /* SwiftDocSkeletonGeneratorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftDocSkeletonGeneratorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A71F8EAE2583C2F400F4C2E6 /* SwiftDocSkeletonGeneratorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftDocSkeletonGeneratorTests.swift; sourceTree = "<group>"; };
+		A71F8EB02583C2F400F4C2E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A71F8EB72583C40200F4C2E6 /* ClassDocumentationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassDocumentationTests.swift; sourceTree = "<group>"; };
+		A7FB1F152583D00F0045B458 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -34,8 +63,24 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A71F8E8D2583BFCC00F4C2E6 /* SwiftSyntax in Frameworks */,
-				A71F8E8F2583BFCC00F4C2E6 /* SwiftSyntaxBuilder in Frameworks */,
+				A71F8EA12583C1AF00F4C2E6 /* libSwiftDocSkeletonGeneratorLib.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A71F8E922583C17F00F4C2E6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7FB1F122583C8780045B458 /* SwiftSyntax in Frameworks */,
+				A7FB1F142583C8780045B458 /* SwiftSyntaxBuilder in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A71F8EA92583C2F300F4C2E6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A71F8EB12583C2F400F4C2E6 /* libSwiftDocSkeletonGeneratorLib.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -45,8 +90,12 @@
 		A71F8E782583BE9A00F4C2E6 = {
 			isa = PBXGroup;
 			children = (
+				A7FB1F152583D00F0045B458 /* README.md */,
 				A71F8E832583BE9A00F4C2E6 /* SwiftDocSkeletonGenerator */,
+				A71F8E952583C17F00F4C2E6 /* SwiftDocSkeletonGeneratorLib */,
+				A71F8EAD2583C2F400F4C2E6 /* SwiftDocSkeletonGeneratorTests */,
 				A71F8E822583BE9A00F4C2E6 /* Products */,
+				A71F8EA02583C1AF00F4C2E6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,6 +103,8 @@
 			isa = PBXGroup;
 			children = (
 				A71F8E812583BE9A00F4C2E6 /* SwiftDocSkeletonGenerator */,
+				A71F8E942583C17F00F4C2E6 /* libSwiftDocSkeletonGeneratorLib.a */,
+				A71F8EAC2583C2F300F4C2E6 /* SwiftDocSkeletonGeneratorTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -66,7 +117,42 @@
 			path = SwiftDocSkeletonGenerator;
 			sourceTree = "<group>";
 		};
+		A71F8E952583C17F00F4C2E6 /* SwiftDocSkeletonGeneratorLib */ = {
+			isa = PBXGroup;
+			children = (
+				A71F8E9E2583C19900F4C2E6 /* ClassDocumentation.swift */,
+			);
+			path = SwiftDocSkeletonGeneratorLib;
+			sourceTree = "<group>";
+		};
+		A71F8EA02583C1AF00F4C2E6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A71F8EAD2583C2F400F4C2E6 /* SwiftDocSkeletonGeneratorTests */ = {
+			isa = PBXGroup;
+			children = (
+				A71F8EAE2583C2F400F4C2E6 /* SwiftDocSkeletonGeneratorTests.swift */,
+				A71F8EB72583C40200F4C2E6 /* ClassDocumentationTests.swift */,
+				A71F8EB02583C2F400F4C2E6 /* Info.plist */,
+			);
+			path = SwiftDocSkeletonGeneratorTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		A71F8E902583C17F00F4C2E6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		A71F8E802583BE9A00F4C2E6 /* SwiftDocSkeletonGenerator */ = {
@@ -80,15 +166,53 @@
 			buildRules = (
 			);
 			dependencies = (
+				A71F8EA32583C1AF00F4C2E6 /* PBXTargetDependency */,
 			);
 			name = SwiftDocSkeletonGenerator;
 			packageProductDependencies = (
-				A71F8E8C2583BFCC00F4C2E6 /* SwiftSyntax */,
-				A71F8E8E2583BFCC00F4C2E6 /* SwiftSyntaxBuilder */,
 			);
 			productName = SwiftDocSkeletonGenerator;
 			productReference = A71F8E812583BE9A00F4C2E6 /* SwiftDocSkeletonGenerator */;
 			productType = "com.apple.product-type.tool";
+		};
+		A71F8E932583C17F00F4C2E6 /* SwiftDocSkeletonGeneratorLib */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A71F8E9A2583C17F00F4C2E6 /* Build configuration list for PBXNativeTarget "SwiftDocSkeletonGeneratorLib" */;
+			buildPhases = (
+				A71F8E902583C17F00F4C2E6 /* Headers */,
+				A71F8E912583C17F00F4C2E6 /* Sources */,
+				A71F8E922583C17F00F4C2E6 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftDocSkeletonGeneratorLib;
+			packageProductDependencies = (
+				A7FB1F112583C8780045B458 /* SwiftSyntax */,
+				A7FB1F132583C8780045B458 /* SwiftSyntaxBuilder */,
+			);
+			productName = Lib;
+			productReference = A71F8E942583C17F00F4C2E6 /* libSwiftDocSkeletonGeneratorLib.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		A71F8EAB2583C2F300F4C2E6 /* SwiftDocSkeletonGeneratorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A71F8EB42583C2F400F4C2E6 /* Build configuration list for PBXNativeTarget "SwiftDocSkeletonGeneratorTests" */;
+			buildPhases = (
+				A71F8EA82583C2F300F4C2E6 /* Sources */,
+				A71F8EA92583C2F300F4C2E6 /* Frameworks */,
+				A71F8EAA2583C2F300F4C2E6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A71F8EB32583C2F400F4C2E6 /* PBXTargetDependency */,
+			);
+			name = SwiftDocSkeletonGeneratorTests;
+			productName = SwiftDocSkeletonGeneratorTests;
+			productReference = A71F8EAC2583C2F300F4C2E6 /* SwiftDocSkeletonGeneratorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -101,6 +225,13 @@
 				ORGANIZATIONNAME = Muis;
 				TargetAttributes = {
 					A71F8E802583BE9A00F4C2E6 = {
+						CreatedOnToolsVersion = 11.2.1;
+					};
+					A71F8E932583C17F00F4C2E6 = {
+						CreatedOnToolsVersion = 11.2.1;
+						LastSwiftMigration = 1120;
+					};
+					A71F8EAB2583C2F300F4C2E6 = {
 						CreatedOnToolsVersion = 11.2.1;
 					};
 				};
@@ -122,9 +253,21 @@
 			projectRoot = "";
 			targets = (
 				A71F8E802583BE9A00F4C2E6 /* SwiftDocSkeletonGenerator */,
+				A71F8E932583C17F00F4C2E6 /* SwiftDocSkeletonGeneratorLib */,
+				A71F8EAB2583C2F300F4C2E6 /* SwiftDocSkeletonGeneratorTests */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A71F8EAA2583C2F300F4C2E6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A71F8E7D2583BE9A00F4C2E6 /* Sources */ = {
@@ -135,7 +278,37 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A71F8E912583C17F00F4C2E6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A71F8E9F2583C19900F4C2E6 /* ClassDocumentation.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A71F8EA82583C2F300F4C2E6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A71F8EAF2583C2F400F4C2E6 /* SwiftDocSkeletonGeneratorTests.swift in Sources */,
+				A71F8EB82583C40200F4C2E6 /* ClassDocumentationTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A71F8EA32583C1AF00F4C2E6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A71F8E932583C17F00F4C2E6 /* SwiftDocSkeletonGeneratorLib */;
+			targetProxy = A71F8EA22583C1AF00F4C2E6 /* PBXContainerItemProxy */;
+		};
+		A71F8EB32583C2F400F4C2E6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A71F8E932583C17F00F4C2E6 /* SwiftDocSkeletonGeneratorLib */;
+			targetProxy = A71F8EB22583C2F400F4C2E6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		A71F8E862583BE9A00F4C2E6 /* Debug */ = {
@@ -273,6 +446,81 @@
 			};
 			name = Release;
 		};
+		A71F8E9B2583C17F00F4C2E6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SDSLU2QT5X;
+				EXECUTABLE_PREFIX = lib;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		A71F8E9C2583C17F00F4C2E6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SDSLU2QT5X;
+				EXECUTABLE_PREFIX = lib;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		A71F8EB52583C2F400F4C2E6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = SDSLU2QT5X;
+				INFOPLIST_FILE = SwiftDocSkeletonGeneratorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.muiz.idn.SwiftDocSkeletonGeneratorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		A71F8EB62583C2F400F4C2E6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = SDSLU2QT5X;
+				INFOPLIST_FILE = SwiftDocSkeletonGeneratorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.muiz.idn.SwiftDocSkeletonGeneratorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -294,6 +542,24 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		A71F8E9A2583C17F00F4C2E6 /* Build configuration list for PBXNativeTarget "SwiftDocSkeletonGeneratorLib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A71F8E9B2583C17F00F4C2E6 /* Debug */,
+				A71F8E9C2583C17F00F4C2E6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A71F8EB42583C2F400F4C2E6 /* Build configuration list for PBXNativeTarget "SwiftDocSkeletonGeneratorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A71F8EB52583C2F400F4C2E6 /* Debug */,
+				A71F8EB62583C2F400F4C2E6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
@@ -308,12 +574,12 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		A71F8E8C2583BFCC00F4C2E6 /* SwiftSyntax */ = {
+		A7FB1F112583C8780045B458 /* SwiftSyntax */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = A71F8E8B2583BFCC00F4C2E6 /* XCRemoteSwiftPackageReference "swift-syntax" */;
 			productName = SwiftSyntax;
 		};
-		A71F8E8E2583BFCC00F4C2E6 /* SwiftSyntaxBuilder */ = {
+		A7FB1F132583C8780045B458 /* SwiftSyntaxBuilder */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = A71F8E8B2583BFCC00F4C2E6 /* XCRemoteSwiftPackageReference "swift-syntax" */;
 			productName = SwiftSyntaxBuilder;
