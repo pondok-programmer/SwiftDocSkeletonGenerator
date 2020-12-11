@@ -15,6 +15,8 @@
 		A7FB1F122583C8780045B458 /* SwiftSyntax in Frameworks */ = {isa = PBXBuildFile; productRef = A7FB1F112583C8780045B458 /* SwiftSyntax */; };
 		A7FB1F142583C8780045B458 /* SwiftSyntaxBuilder in Frameworks */ = {isa = PBXBuildFile; productRef = A7FB1F132583C8780045B458 /* SwiftSyntaxBuilder */; };
 		A7FB1F172583DAE00045B458 /* BaseDocumentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7FB1F162583DAE00045B458 /* BaseDocumentation.swift */; };
+		A7FB1F192583DCC40045B458 /* StructDocumentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7FB1F182583DCC40045B458 /* StructDocumentation.swift */; };
+		A7FB1F1B2583DCF40045B458 /* StructDocumentationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7FB1F1A2583DCF40045B458 /* StructDocumentationTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +58,8 @@
 		A71F8EB72583C40200F4C2E6 /* ClassDocumentationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassDocumentationTests.swift; sourceTree = "<group>"; };
 		A7FB1F152583D00F0045B458 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		A7FB1F162583DAE00045B458 /* BaseDocumentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseDocumentation.swift; sourceTree = "<group>"; };
+		A7FB1F182583DCC40045B458 /* StructDocumentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StructDocumentation.swift; sourceTree = "<group>"; };
+		A7FB1F1A2583DCF40045B458 /* StructDocumentationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StructDocumentationTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +126,7 @@
 			children = (
 				A71F8E9E2583C19900F4C2E6 /* ClassDocumentation.swift */,
 				A7FB1F162583DAE00045B458 /* BaseDocumentation.swift */,
+				A7FB1F182583DCC40045B458 /* StructDocumentation.swift */,
 			);
 			path = SwiftDocSkeletonGeneratorLib;
 			sourceTree = "<group>";
@@ -137,6 +142,7 @@
 			isa = PBXGroup;
 			children = (
 				A71F8EB72583C40200F4C2E6 /* ClassDocumentationTests.swift */,
+				A7FB1F1A2583DCF40045B458 /* StructDocumentationTests.swift */,
 				A71F8EB02583C2F400F4C2E6 /* Info.plist */,
 			);
 			path = SwiftDocSkeletonGeneratorTests;
@@ -284,6 +290,7 @@
 			files = (
 				A71F8E9F2583C19900F4C2E6 /* ClassDocumentation.swift in Sources */,
 				A7FB1F172583DAE00045B458 /* BaseDocumentation.swift in Sources */,
+				A7FB1F192583DCC40045B458 /* StructDocumentation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,6 +299,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A71F8EB82583C40200F4C2E6 /* ClassDocumentationTests.swift in Sources */,
+				A7FB1F1B2583DCF40045B458 /* StructDocumentationTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
