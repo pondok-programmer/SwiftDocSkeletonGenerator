@@ -10,21 +10,7 @@ import Foundation
 import SwiftSyntax
 
 
-public final class ClassDocumentation: SyntaxRewriter {
-    private let parsed: SourceFileSyntax
-    
-    // FIXME: better convenience init?
-    init(_ source: String) throws {
-        parsed = try SyntaxParser.parse(source: source)
-    }
-    
-    init(_ syntax: SourceFileSyntax) {
-        parsed = syntax
-    }
-    
-    func rewrite() -> String {
-        return "\(visit(parsed))"
-    }
+public final class ClassDocumentation: BaseDocumentation {
     
     public override func visit(_ node: ClassDeclSyntax) -> DeclSyntax {
         var docBlock = """
